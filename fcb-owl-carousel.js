@@ -1,3 +1,6 @@
+// This should be added to the page you want to use the news carousel on. Alternatively, you could add it to header.inc to ensure the slider works on every page.
+// Feel free to link to a javascript file or use directly on the page within the <headcode> tags.
+
 function rebuildCarousel() {
 var owl= $('.news-slider-full-width');
 owl.owlCarousel({
