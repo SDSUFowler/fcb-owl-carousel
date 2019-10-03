@@ -1,0 +1,39 @@
+<!--
+Create an OU Component called "News" with the following variables.
+
+1. Short Text
+Label: News Section Title
+Helper Text: Enter title of news section to show above news feed.
+Placeholder Text: News
+Required Field?: Yes
+
+2. Dropdown
+Label: Max Articles
+Helper Text: Select max number of news articles to loop through.
+Required Field? Yes
+Items:
+10
+15
+20
+25
+30
+35
+40
+45
+50
+
+3. Short Text
+Label: Tag Filter
+Helper Text: Optionally filter news articles by tag.
+Required Field?: No
+-->
+
+<!-- Use the following as source code, replacing {{BRACKETED}} items with your Form Elements and path to your RSS feed. -->
+
+<h1 class="text-center margin-bottom-20">{{NEWS SECTION TITLE}}</h1>
+<news_feed 
+     path="{{YOUR RSS FEED PATH}}"
+     displayMethod="displayNewsFullWidth"
+     itemsDisplay="{{MAX ARTICLES}}"
+     tagFilter="{{TAG FILTER}}"
+/>
